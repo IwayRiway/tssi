@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import { Header } from '../../components'
 import { colors, fonts } from '../../utils'
-import { Gap, Header } from '../../components'
 
 const Home = () => {
   return (

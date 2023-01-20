@@ -1,5 +1,5 @@
-import Splashscreen from './Splashscreen';
-import Login from './Login';
 import Home from './Home';
+import Login from './Login';
+import Splashscreen from './Splashscreen';
 
-export {Splashscreen, Login, Home}
+export { Splashscreen, Login, Home };

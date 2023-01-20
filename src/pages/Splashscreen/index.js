@@ -1,9 +1,16 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
-import React from 'react';
-import { colors, fonts } from '../../utils';
+import React, { useEffect } from 'react';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { Sip } from '../../assets';
+import { colors, fonts } from '../../utils';
 
-const Splashscreen = () => {
+const Splashscreen = ({navigation}) => {
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.replace('Login')
+    }, 2000);
+  }, []);
+
   return (
     <View style={styles.container}>
       <Image source={Sip} style={{width: 150, height: 150}} resizeMode='contain' />

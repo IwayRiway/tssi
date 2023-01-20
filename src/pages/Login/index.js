@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, TextInput as TextInputRN, TouchableOpacity } from 'react-native'
 import React from 'react'
-import {Button, Gap, Header, TextInput} from '../../components'
+import { StyleSheet, Text, TextInput as TextInputRN, View } from 'react-native'
+import { Button, Gap, Header, TextInput } from '../../components'
 import { colors, fonts } from '../../utils'
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <View style={styles.page}>
       <Header title="Masuk" subTitle="Silahkan masuk dengan akun sip anda" />
@@ -23,7 +23,7 @@ const Login = () => {
           />
         </View>
         <Gap height={24} />
-        <Button text="Masuk" onPress={() => {}} />
+        <Button text="Masuk" onPress={() => navigation.replace('Home')} />
       </View>
     </View>
   )
